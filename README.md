@@ -14,13 +14,13 @@ it is assumed that a quantile of spots with the lowest signal does not show a si
    - Quantile of lowest signal spots to use for estimating Sigma0: 0.1
    - Assumed technical CV (Sigma1): 0.1
   
-*Advanced users may edit the above values may by opening the app and changing the properties of the "Estimate Nominal CV" operator.
+* Advanced users may edit the above values may by opening the app and changing the properties of the "Estimate Nominal CV" operator.
 
 The input data is the [ptk dataset](https://tercen.com/r/7f865df18753ebf56ca2bbafe1ef7497)
 
 This workflow has 3 operators:
 
-* [check_input_operator](https://github.com/tercen/check_input_operator)
+* [check_input_operator](https://github.com/tercen/check_input1_operator)
 * [Nominal CV Estimate operator](https://github.com/tercen/nominal_cv_estimate_operator)
 * [Log Cutoff operator](https://github.com/tercen/log_cutoff_operator)
 
