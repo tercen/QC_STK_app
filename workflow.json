@@ -4,7 +4,7 @@
   "isDeleted": false,
   "rev": "35-e67e73989a5aa6516cc520c5af0b57da",
   "description": "Quality control of Serine/Threonine PamChip measurements",
-  "name": "STK_QC_generic",
+  "name": "QC_STK_app",
   "createdBy": "Martin",
   "acl": {
     "kind": "Acl",
@@ -22,7 +22,7 @@
   "urls": [
     {
       "kind": "Url",
-      "uri": "https://github.com/tercen/STK_QC_app"
+      "uri": "https://github.com/tercen/QC_STK_app"
     }
   ],
   "tags": [],
@@ -40,7 +40,7 @@
   ],
   "url": {
     "kind": "Url",
-    "uri": "https://github.com/tercen/STK_QC_app"
+    "uri": "https://github.com/tercen/QC_STK_app"
   },
   "version": "0.0.1",
   "authors": [],
