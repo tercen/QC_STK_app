@@ -30,4 +30,4 @@ This workflow has 1 view:
 
 ##### See Also
 
-[STK_QC_app](https://github.com/tercen/STK_QC_app)
+[QC_PTK_app](https://github.com/tercen/QC_PTK_app)
