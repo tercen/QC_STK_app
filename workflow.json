@@ -1,11 +1,11 @@
 {
   "kind": "Workflow",
-  "id": "33fb64086c3295748ed979a87b6201ff",
+  "id": "32686b39f178f64eef1bbd3844b6c096",
   "isDeleted": false,
-  "rev": "35-e67e73989a5aa6516cc520c5af0b57da",
+  "rev": "72-d9ec9ab78ffbdb78d9047891e54ddb0f",
   "description": "Quality control of Serine/Threonine PamChip measurements",
   "name": "QC_STK_app",
-  "createdBy": "Martin",
+  "createdBy": "alex",
   "acl": {
     "kind": "Acl",
     "owner": "pamgene",
@@ -13,16 +13,16 @@
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2021-09-21T13:09:44.635462Z"
+    "value": "2021-10-15T11:05:17.478415Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2021-10-15T08:31:38.315022Z"
+    "value": "2022-01-24T13:53:56.940251Z"
   },
   "urls": [
     {
       "kind": "Url",
-      "uri": "https://github.com/tercen/QC_STK_app"
+      "uri": "https://github.com/tercen/STK_QC_app"
     }
   ],
   "tags": [],
@@ -40,7 +40,7 @@
   ],
   "url": {
     "kind": "Url",
-    "uri": "https://github.com/tercen/QC_STK_app"
+    "uri": "https://github.com/tercen/STK_QC_app"
   },
   "version": "0.0.1",
   "authors": [],
@@ -68,12 +68,6 @@
     },
     {
       "kind": "Link",
-      "id": "5cc43e62-a214-47f2-817e-6088d6b49df7",
-      "inputId": "ffd794dd-dee1-4e95-ac37-1562f0cb833a-i-0",
-      "outputId": "d31ff7c8-35f1-4b53-8d6b-f7a27e4d4157-o-0"
-    },
-    {
-      "kind": "Link",
       "id": "bec13052-5169-4c2b-b177-516882da49f1",
       "inputId": "0d1e2c5b-9873-46b6-bc27-5ecc39a175e0-i-0",
       "outputId": "d3b4b0cf-1643-4526-95aa-b9bff9974088-o-0"
@@ -86,9 +80,15 @@
     },
     {
       "kind": "Link",
-      "id": "f638d9db-9ad3-46f2-8c23-6570e0244837",
+      "id": "22d102c3-c16d-4fbd-9696-9cab059709a1",
+      "inputId": "2756f592-a342-4494-8883-3b27f43dadfa-i-0",
+      "outputId": "2e31e5d8-1887-4ca5-87b4-ab638cbe07d2-o-0"
+    },
+    {
+      "kind": "Link",
+      "id": "a0ec486c-fcfb-4eeb-9e19-9004ff82dfbc",
       "inputId": "9a2947ac-2def-45b2-8ee9-6736ba2a22bc-i-0",
-      "outputId": "ffd794dd-dee1-4e95-ac37-1562f0cb833a-o-0"
+      "outputId": "2756f592-a342-4494-8883-3b27f43dadfa-o-0"
     }
   ],
   "steps": [
@@ -117,12 +117,302 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 146.85546875,
+          "x": 141.81378173828125,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 581.6984765625002,
+          "x": 587.6984765625002,
+          "y": 296.5
+        }
+      },
+      "state": {
+        "kind": "StepState",
+        "taskId": "",
+        "taskState": {
+          "kind": "InitState"
+        }
+      },
+      "model": {
+        "kind": "Crosstab",
+        "axis": {
+          "kind": "XYAxisList",
+          "rectangleSelections": [],
+          "xyAxis": [
+            {
+              "kind": "XYAxis",
+              "chart": {
+                "kind": "ChartPoint",
+                "name": "",
+                "properties": {
+                  "kind": "Properties",
+                  "properties": [],
+                  "propertyValues": []
+                },
+                "pointSize": 4
+              },
+              "colors": {
+                "kind": "Colors",
+                "factors": [],
+                "palette": {
+                  "kind": "CategoryPalette",
+                  "backcolor": 0,
+                  "properties": [],
+                  "colorList": {
+                    "kind": "ColorList",
+                    "name": ""
+                  },
+                  "stringColorElements": []
+                }
+              },
+              "errors": {
+                "kind": "Errors",
+                "factors": []
+              },
+              "labels": {
+                "kind": "Labels",
+                "factors": []
+              },
+              "xAxis": {
+                "kind": "Axis",
+                "axisExtent": {
+                  "kind": "Point",
+                  "x": 80.0,
+                  "y": 30.0
+                },
+                "axisSettings": {
+                  "kind": "AxisSettings",
+                  "properties": [],
+                  "propertyValues": []
+                },
+                "graphicalFactor": {
+                  "kind": "GraphicalFactor",
+                  "factor": {
+                    "kind": "Factor",
+                    "name": "",
+                    "type": "string"
+                  },
+                  "rectangle": {
+                    "kind": "Rectangle",
+                    "extent": {
+                      "kind": "Point",
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "topLeft": {
+                      "kind": "Point",
+                      "x": 0.0,
+                      "y": 0.0
+                    }
+                  }
+                }
+              },
+              "yAxis": {
+                "kind": "Axis",
+                "axisExtent": {
+                  "kind": "Point",
+                  "x": 80.0,
+                  "y": 30.0
+                },
+                "axisSettings": {
+                  "kind": "AxisSettings",
+                  "properties": [],
+                  "propertyValues": []
+                },
+                "graphicalFactor": {
+                  "kind": "GraphicalFactor",
+                  "factor": {
+                    "kind": "Factor",
+                    "name": "ds0.checked_input",
+                    "type": "double"
+                  },
+                  "rectangle": {
+                    "kind": "Rectangle",
+                    "extent": {
+                      "kind": "Point",
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "topLeft": {
+                      "kind": "Point",
+                      "x": 0.0,
+                      "y": 0.0
+                    }
+                  }
+                }
+              },
+              "taskId": ""
+            }
+          ]
+        },
+        "columnTable": {
+          "kind": "CrosstabTable",
+          "cellSize": 77.0,
+          "offset": 0,
+          "graphicalFactors": [
+            {
+              "kind": "GraphicalFactor",
+              "factor": {
+                "kind": "Factor",
+                "name": "Group",
+                "type": "string"
+              },
+              "rectangle": {
+                "kind": "Rectangle",
+                "extent": {
+                  "kind": "Point",
+                  "x": 0.0,
+                  "y": 30.0
+                },
+                "topLeft": {
+                  "kind": "Point",
+                  "x": 0.0,
+                  "y": 0.0
+                }
+              }
+            },
+            {
+              "kind": "GraphicalFactor",
+              "factor": {
+                "kind": "Factor",
+                "name": "Series",
+                "type": "double"
+              },
+              "rectangle": {
+                "kind": "Rectangle",
+                "extent": {
+                  "kind": "Point",
+                  "x": 60.0,
+                  "y": 30.0
+                },
+                "topLeft": {
+                  "kind": "Point",
+                  "x": 0.0,
+                  "y": 0.0
+                }
+              }
+            }
+          ],
+          "rectangleSelections": [],
+          "nRows": 10
+        },
+        "filters": {
+          "kind": "Filters",
+          "removeNaN": false,
+          "namedFilters": []
+        },
+        "operatorSettings": {
+          "kind": "OperatorSettings",
+          "namespace": "ds1",
+          "operatorRef": {
+            "kind": "OperatorRef",
+            "name": "Nominal CV Estimate",
+            "version": "0.0.1",
+            "operatorId": "32686b39f178f64eef1bbd38448e783b",
+            "operatorKind": "ROperator",
+            "propertyValues": [
+              {
+                "kind": "PropertyValue",
+                "name": "Quantile for low signal spots",
+                "value": "0.1"
+              },
+              {
+                "kind": "PropertyValue",
+                "name": "High signal CV",
+                "value": "0.1"
+              },
+              {
+                "kind": "PropertyValue",
+                "name": "Nominal CV max",
+                "value": "1"
+              }
+            ],
+            "url": {
+              "kind": "Url",
+              "uri": "https://github.com/tercen/nominal_cv_estimate_operator"
+            }
+          },
+          "environment": [
+            {
+              "kind": "Pair",
+              "key": "cpu",
+              "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "ram",
+              "value": "0"
+            }
+          ]
+        },
+        "rowTable": {
+          "kind": "CrosstabTable",
+          "cellSize": 49.4,
+          "offset": 0,
+          "graphicalFactors": [
+            {
+              "kind": "GraphicalFactor",
+              "factor": {
+                "kind": "Factor",
+                "name": "Variable",
+                "type": "string"
+              },
+              "rectangle": {
+                "kind": "Rectangle",
+                "extent": {
+                  "kind": "Point",
+                  "x": 80.0,
+                  "y": 0.0
+                },
+                "topLeft": {
+                  "kind": "Point",
+                  "x": 0.0,
+                  "y": 0.0
+                }
+              }
+            }
+          ],
+          "rectangleSelections": [],
+          "nRows": 10
+        },
+        "taskId": ""
+      },
+      "computedRelation": {
+        "kind": "Relation",
+        "id": "297d5815-ee22-4334-8588-3e9b51d83ed8"
+      }
+    },
+    {
+      "kind": "DataStep",
+      "id": "dbec52f8-e867-4190-9f9b-884fef83b846",
+      "groupId": "",
+      "name": "Log transform",
+      "inputs": [
+        {
+          "kind": "InputPort",
+          "id": "dbec52f8-e867-4190-9f9b-884fef83b846-i-0",
+          "linkType": "relation",
+          "name": "data"
+        }
+      ],
+      "outputs": [
+        {
+          "kind": "OutputPort",
+          "id": "dbec52f8-e867-4190-9f9b-884fef83b846-o-0",
+          "linkType": "relation",
+          "name": "data"
+        }
+      ],
+      "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+          "kind": "Point",
+          "x": 101.91386413574219,
+          "y": 55.0
+        },
+        "topLeft": {
+          "kind": "Point",
+          "x": 406.2210546875003,
           "y": 298.5
         }
       },
@@ -247,7 +537,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 21.0,
+          "cellSize": 47.0,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -293,295 +583,8 @@
               }
             }
           ],
-          "rectangleSelections": []
-        },
-        "filters": {
-          "kind": "Filters",
-          "removeNaN": false,
-          "namedFilters": []
-        },
-        "operatorSettings": {
-          "kind": "OperatorSettings",
-          "namespace": "ds1",
-          "operatorRef": {
-            "kind": "OperatorRef",
-            "name": "Nominal CV Estimate",
-            "version": "0.0.1",
-            "operatorId": "32686b39f178f64eef1bbd38448e783b",
-            "operatorKind": "ROperator",
-            "propertyValues": [
-              {
-                "kind": "PropertyValue",
-                "name": "Quantile for low signal spots",
-                "value": "0.1"
-              },
-              {
-                "kind": "PropertyValue",
-                "name": "High signal CV",
-                "value": "0.1"
-              },
-              {
-                "kind": "PropertyValue",
-                "name": "Nominal CV max",
-                "value": "1"
-              }
-            ],
-            "url": {
-              "kind": "Url",
-              "uri": "https://github.com/tercen/nominal_cv_estimate_operator"
-            }
-          },
-          "environment": [
-            {
-              "kind": "Pair",
-              "key": "cpu",
-              "value": "0"
-            },
-            {
-              "kind": "Pair",
-              "key": "ram",
-              "value": "0"
-            }
-          ]
-        },
-        "rowTable": {
-          "kind": "CrosstabTable",
-          "cellSize": 49.4,
-          "offset": 0,
-          "graphicalFactors": [
-            {
-              "kind": "GraphicalFactor",
-              "factor": {
-                "kind": "Factor",
-                "name": "Variable",
-                "type": "string"
-              },
-              "rectangle": {
-                "kind": "Rectangle",
-                "extent": {
-                  "kind": "Point",
-                  "x": 80.0,
-                  "y": 0.0
-                },
-                "topLeft": {
-                  "kind": "Point",
-                  "x": 0.0,
-                  "y": 0.0
-                }
-              }
-            }
-          ],
-          "rectangleSelections": []
-        },
-        "taskId": ""
-      },
-      "computedRelation": {
-        "kind": "Relation",
-        "id": "2fb44135-dff9-4fb9-907d-e3f8b78a22b8"
-      }
-    },
-    {
-      "kind": "DataStep",
-      "id": "dbec52f8-e867-4190-9f9b-884fef83b846",
-      "groupId": "",
-      "name": "Log transform",
-      "inputs": [
-        {
-          "kind": "InputPort",
-          "id": "dbec52f8-e867-4190-9f9b-884fef83b846-i-0",
-          "linkType": "relation",
-          "name": "data"
-        }
-      ],
-      "outputs": [
-        {
-          "kind": "OutputPort",
-          "id": "dbec52f8-e867-4190-9f9b-884fef83b846-o-0",
-          "linkType": "relation",
-          "name": "data"
-        }
-      ],
-      "rectangle": {
-        "kind": "Rectangle",
-        "extent": {
-          "kind": "Point",
-          "x": 104.076171875,
-          "y": 55.0
-        },
-        "topLeft": {
-          "kind": "Point",
-          "x": 404.2210546875003,
-          "y": 297.5
-        }
-      },
-      "state": {
-        "kind": "StepState",
-        "taskId": "",
-        "taskState": {
-          "kind": "InitState"
-        }
-      },
-      "model": {
-        "kind": "Crosstab",
-        "axis": {
-          "kind": "XYAxisList",
           "rectangleSelections": [],
-          "xyAxis": [
-            {
-              "kind": "XYAxis",
-              "chart": {
-                "kind": "ChartPoint",
-                "name": "",
-                "properties": {
-                  "kind": "Properties",
-                  "properties": [],
-                  "propertyValues": []
-                },
-                "pointSize": 4
-              },
-              "colors": {
-                "kind": "Colors",
-                "factors": [],
-                "palette": {
-                  "kind": "CategoryPalette",
-                  "backcolor": 0,
-                  "properties": [],
-                  "colorList": {
-                    "kind": "ColorList",
-                    "name": ""
-                  },
-                  "stringColorElements": []
-                }
-              },
-              "errors": {
-                "kind": "Errors",
-                "factors": []
-              },
-              "labels": {
-                "kind": "Labels",
-                "factors": []
-              },
-              "xAxis": {
-                "kind": "Axis",
-                "axisExtent": {
-                  "kind": "Point",
-                  "x": 80.0,
-                  "y": 30.0
-                },
-                "axisSettings": {
-                  "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
-                },
-                "graphicalFactor": {
-                  "kind": "GraphicalFactor",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "",
-                    "type": "string"
-                  },
-                  "rectangle": {
-                    "kind": "Rectangle",
-                    "extent": {
-                      "kind": "Point",
-                      "x": 0.0,
-                      "y": 0.0
-                    },
-                    "topLeft": {
-                      "kind": "Point",
-                      "x": 0.0,
-                      "y": 0.0
-                    }
-                  }
-                }
-              },
-              "yAxis": {
-                "kind": "Axis",
-                "axisExtent": {
-                  "kind": "Point",
-                  "x": 80.0,
-                  "y": 30.0
-                },
-                "axisSettings": {
-                  "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
-                },
-                "graphicalFactor": {
-                  "kind": "GraphicalFactor",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "ds0.checked_input",
-                    "type": "double"
-                  },
-                  "rectangle": {
-                    "kind": "Rectangle",
-                    "extent": {
-                      "kind": "Point",
-                      "x": 0.0,
-                      "y": 0.0
-                    },
-                    "topLeft": {
-                      "kind": "Point",
-                      "x": 0.0,
-                      "y": 0.0
-                    }
-                  }
-                }
-              },
-              "taskId": ""
-            }
-          ]
-        },
-        "columnTable": {
-          "kind": "CrosstabTable",
-          "cellSize": 26.0,
-          "offset": 0,
-          "graphicalFactors": [
-            {
-              "kind": "GraphicalFactor",
-              "factor": {
-                "kind": "Factor",
-                "name": "Group",
-                "type": "string"
-              },
-              "rectangle": {
-                "kind": "Rectangle",
-                "extent": {
-                  "kind": "Point",
-                  "x": 0.0,
-                  "y": 30.0
-                },
-                "topLeft": {
-                  "kind": "Point",
-                  "x": 0.0,
-                  "y": 0.0
-                }
-              }
-            },
-            {
-              "kind": "GraphicalFactor",
-              "factor": {
-                "kind": "Factor",
-                "name": "Series",
-                "type": "double"
-              },
-              "rectangle": {
-                "kind": "Rectangle",
-                "extent": {
-                  "kind": "Point",
-                  "x": 60.0,
-                  "y": 30.0
-                },
-                "topLeft": {
-                  "kind": "Point",
-                  "x": 0.0,
-                  "y": 0.0
-                }
-              }
-            }
-          ],
-          "rectangleSelections": []
+          "nRows": 10
         },
         "filters": {
           "kind": "Filters",
@@ -628,7 +631,7 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 59.75,
+          "cellSize": 35.75,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -653,13 +656,14 @@
               }
             }
           ],
-          "rectangleSelections": []
+          "rectangleSelections": [],
+          "nRows": 10
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "994a4742-623b-4d81-ad9a-14773533a661"
+        "id": "59dfd235-7968-4311-86be-9a74df427cc3"
       }
     },
     {
@@ -687,12 +691,12 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 180.74609375,
+          "x": 173.957763671875,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 172.74265625000044,
+          "x": 173.74265625000044,
           "y": 296.5
         }
       },
@@ -707,7 +711,21 @@
         "kind": "Crosstab",
         "axis": {
           "kind": "XYAxisList",
-          "rectangleSelections": [],
+          "rectangleSelections": [
+            {
+              "kind": "Rectangle",
+              "extent": {
+                "kind": "Point",
+                "x": 0.0,
+                "y": 0.0
+              },
+              "topLeft": {
+                "kind": "Point",
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
           "xyAxis": [
             {
               "kind": "XYAxis",
@@ -738,12 +756,12 @@
                     {
                       "kind": "DoubleColorElement",
                       "color": -1,
-                      "stringValue": "-0.10779001833581836"
+                      "stringValue": "-0.012172428330751828"
                     },
                     {
                       "kind": "DoubleColorElement",
                       "color": -1,
-                      "stringValue": "1.3300525011598112"
+                      "stringValue": "1.2175195036101296"
                     }
                   ]
                 }
@@ -830,7 +848,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 23.5,
+          "cellSize": 53.0,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -844,7 +862,7 @@
                 "kind": "Rectangle",
                 "extent": {
                   "kind": "Point",
-                  "x": 50.0,
+                  "x": 0.0,
                   "y": 30.0
                 },
                 "topLeft": {
@@ -865,7 +883,7 @@
                 "kind": "Rectangle",
                 "extent": {
                   "kind": "Point",
-                  "x": 0.0,
+                  "x": 60.0,
                   "y": 30.0
                 },
                 "topLeft": {
@@ -876,7 +894,8 @@
               }
             }
           ],
-          "rectangleSelections": []
+          "rectangleSelections": [],
+          "nRows": 10
         },
         "filters": {
           "kind": "Filters",
@@ -902,7 +921,7 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 64.4,
+          "cellSize": 43.400000000000006,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -948,13 +967,14 @@
               }
             }
           ],
-          "rectangleSelections": []
+          "rectangleSelections": [],
+          "nRows": 10
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "a1237b2a-bfbe-40e1-ad60-70173a62d7b0"
+        "id": "93a3446b-b023-48d5-972e-eab9738200b6"
       }
     },
     {
@@ -993,99 +1013,6 @@
       }
     },
     {
-      "kind": "WizardStep",
-      "id": "ffd794dd-dee1-4e95-ac37-1562f0cb833a",
-      "groupId": "",
-      "name": "STK QC Wizard",
-      "inputs": [
-        {
-          "kind": "InputPort",
-          "id": "ffd794dd-dee1-4e95-ac37-1562f0cb833a-i-0",
-          "linkType": "relation",
-          "name": "table"
-        }
-      ],
-      "outputs": [
-        {
-          "kind": "OutputPort",
-          "id": "ffd794dd-dee1-4e95-ac37-1562f0cb833a-o-0",
-          "linkType": "relation",
-          "name": "table"
-        }
-      ],
-      "rectangle": {
-        "kind": "Rectangle",
-        "extent": {
-          "kind": "Point",
-          "x": 109.197265625,
-          "y": 55.0
-        },
-        "topLeft": {
-          "kind": "Point",
-          "x": 600.5050000000001,
-          "y": 76.5
-        }
-      },
-      "state": {
-        "kind": "StepState",
-        "taskId": "",
-        "taskState": {
-          "kind": "InitState"
-        }
-      },
-      "model": {
-        "kind": "WizardStepModel",
-        "namespace": "STK-QC",
-        "description": "",
-        "factors": [
-          {
-            "kind": "MappingFactor",
-            "name": "Measurement",
-            "type": "double",
-            "isSingle": true,
-            "description": "",
-            "factorName": "Measurement",
-            "factors": [],
-            "isRequired": true
-          },
-          {
-            "kind": "MappingFactor",
-            "name": "Variable",
-            "type": "string",
-            "isSingle": false,
-            "description": "",
-            "factorName": "Variable",
-            "factors": [],
-            "isRequired": true
-          },
-          {
-            "kind": "MappingFactor",
-            "name": "Group",
-            "type": "string",
-            "isSingle": false,
-            "description": "",
-            "factorName": "Group",
-            "factors": [],
-            "isRequired": true
-          },
-          {
-            "kind": "MappingFactor",
-            "name": "Series",
-            "type": "double",
-            "isSingle": false,
-            "description": "",
-            "factorName": "Series",
-            "factors": [],
-            "isRequired": true
-          }
-        ],
-        "filters": [],
-        "steps": [],
-        "defaultFactors": [],
-        "defaultFilters": []
-      }
-    },
-    {
       "kind": "InStep",
       "id": "d31ff7c8-35f1-4b53-8d6b-f7a27e4d4157",
       "groupId": "",
@@ -1115,8 +1042,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 609.5050000000001,
-          "y": -30.5
+          "x": 410.5050000000001,
+          "y": 32.5
         }
       },
       "state": {
@@ -1162,8 +1089,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 610.2210546875003,
-          "y": 410.5
+          "x": 615.2210546875003,
+          "y": 404.5
         }
       },
       "state": {
@@ -1204,13 +1131,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 103.044921875,
+          "x": 99.6458740234375,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 602.9523828125002,
-          "y": 187.5
+          "x": 609.9523828125002,
+          "y": 204.5
         }
       },
       "state": {
@@ -1334,7 +1261,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 30.0,
+          "cellSize": 29.35,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -1348,7 +1275,7 @@
                 "kind": "Rectangle",
                 "extent": {
                   "kind": "Point",
-                  "x": 0.0,
+                  "x": 50.0,
                   "y": 30.0
                 },
                 "topLeft": {
@@ -1380,12 +1307,32 @@
               }
             }
           ],
-          "rectangleSelections": []
+          "rectangleSelections": [],
+          "nRows": 10
         },
         "filters": {
           "kind": "Filters",
           "removeNaN": true,
-          "namedFilters": []
+          "namedFilters": [
+            {
+              "kind": "NamedFilter",
+              "logical": "and",
+              "not": false,
+              "filterExprs": [
+                {
+                  "kind": "FilterExpr",
+                  "filterOp": "equals",
+                  "stringValue": "1",
+                  "factor": {
+                    "kind": "Factor",
+                    "name": "Series",
+                    "type": "double"
+                  }
+                }
+              ],
+              "name": "Series"
+            }
+          ]
         },
         "operatorSettings": {
           "kind": "OperatorSettings",
@@ -1393,8 +1340,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Check input 1 operator",
-            "version": "0.0.1",
-            "operatorId": "32686b39f178f64eef1bbd3844142688",
+            "version": "0.0.2",
+            "operatorId": "32686b39f178f64eef1bbd3844b1317d",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -1431,19 +1378,204 @@
               }
             }
           ],
-          "rectangleSelections": []
+          "rectangleSelections": [],
+          "nRows": 10
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "2dc0f309-fe00-4fc2-95e7-3ccb9950860c"
+        "id": "1cacbb9c-7745-4515-8042-b0c9ad2b52b3"
+      }
+    },
+    {
+      "kind": "TableStep",
+      "id": "2e31e5d8-1887-4ca5-87b4-ab638cbe07d2",
+      "groupId": "",
+      "name": "c05_groups_series.tsv",
+      "inputs": [],
+      "outputs": [
+        {
+          "kind": "OutputPort",
+          "id": "2e31e5d8-1887-4ca5-87b4-ab638cbe07d2-o-0",
+          "linkType": "relation",
+          "name": "table"
+        }
+      ],
+      "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+          "kind": "Point",
+          "x": 148.67381286621094,
+          "y": 55.0
+        },
+        "topLeft": {
+          "kind": "Point",
+          "x": 580.5050000000001,
+          "y": 29.5
+        }
+      },
+      "state": {
+        "kind": "StepState",
+        "taskId": "",
+        "taskState": {
+          "kind": "DoneState"
+        }
+      },
+      "model": {
+        "kind": "TableStepModel",
+        "relation": {
+          "kind": "RenameRelation",
+          "id": "rename_6d20af5cdc113d7de28ff3862d238fff",
+          "relation": {
+            "kind": "SimpleRelation",
+            "id": "6d20af5cdc113d7de28ff3862d238fff",
+            "index": 0
+          },
+          "inNames": [
+            "Variable",
+            "Observation",
+            "Group",
+            "Series",
+            "Measurement",
+            "6d20af5cdc113d7de28ff3862d238fff._rids",
+            "6d20af5cdc113d7de28ff3862d238fff.tlbId"
+          ],
+          "outNames": [
+            "Variable",
+            "Observation",
+            "Group",
+            "Series",
+            "Measurement",
+            "rowId",
+            "tableId"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "WizardStep",
+      "id": "2756f592-a342-4494-8883-3b27f43dadfa",
+      "groupId": "",
+      "name": "QC STK Wizard",
+      "inputs": [
+        {
+          "kind": "InputPort",
+          "id": "2756f592-a342-4494-8883-3b27f43dadfa-i-0",
+          "linkType": "relation",
+          "name": "table"
+        }
+      ],
+      "outputs": [
+        {
+          "kind": "OutputPort",
+          "id": "2756f592-a342-4494-8883-3b27f43dadfa-o-0",
+          "linkType": "relation",
+          "name": "table"
+        }
+      ],
+      "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+          "kind": "Point",
+          "x": 105.31585693359375,
+          "y": 55.0
+        },
+        "topLeft": {
+          "kind": "Point",
+          "x": 606.3469064331057,
+          "y": 113.5
+        }
+      },
+      "state": {
+        "kind": "StepState",
+        "taskId": "",
+        "taskState": {
+          "kind": "InitState"
+        }
+      },
+      "model": {
+        "kind": "WizardStepModel",
+        "namespace": "ws0",
+        "description": "",
+        "appDesignType": "",
+        "factors": [
+          {
+            "kind": "MappingFactor",
+            "name": "Measurement",
+            "type": "double",
+            "isSingle": true,
+            "description": "",
+            "factorName": "Measurement",
+            "factors": [],
+            "isRequired": true
+          },
+          {
+            "kind": "MappingFactor",
+            "name": "Variable",
+            "type": "string",
+            "isSingle": false,
+            "description": "",
+            "factorName": "Variable",
+            "factors": [],
+            "isRequired": true
+          },
+          {
+            "kind": "MappingFactor",
+            "name": "Group",
+            "type": "string",
+            "isSingle": false,
+            "description": "",
+            "factorName": "Group",
+            "factors": [],
+            "isRequired": true
+          },
+          {
+            "kind": "MappingFactor",
+            "name": "Series",
+            "type": "double",
+            "isSingle": false,
+            "description": "",
+            "factorName": "Series",
+            "factors": [],
+            "isRequired": true
+          }
+        ],
+        "filters": [
+          {
+            "kind": "MappingFilter",
+            "name": "Series",
+            "description": "",
+            "namedFilter": {
+              "kind": "NamedFilter",
+              "logical": "and",
+              "not": false,
+              "filterExprs": [
+                {
+                  "kind": "FilterExpr",
+                  "filterOp": "equals",
+                  "stringValue": "1",
+                  "factor": {
+                    "kind": "Factor",
+                    "name": "Series",
+                    "type": "double"
+                  }
+                }
+              ],
+              "name": "Series"
+            },
+            "isRequired": false
+          }
+        ],
+        "steps": [],
+        "defaultFactors": [],
+        "defaultFilters": []
       }
     }
   ],
   "offset": {
     "kind": "Point",
-    "x": 192.0,
-    "y": 114.0
+    "x": 93.0,
+    "y": 110.0
   }
 }
