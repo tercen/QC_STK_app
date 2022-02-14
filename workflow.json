@@ -1,11 +1,11 @@
 {
   "kind": "Workflow",
-  "id": "32686b39f178f64eef1bbd3844b6c096",
+  "id": "c845ceade32c4423bc616ff5ab45cc8f",
   "isDeleted": false,
-  "rev": "75-5e192aa5c38c12d3486fd03f52932b89",
+  "rev": "4-b8799aadec2aeea617329ed5e63a70ce",
   "description": "Quality control of Serine/Threonine PamChip measurements",
   "name": "QC_STK_app",
-  "createdBy": "alex",
+  "createdBy": "ginberg",
   "acl": {
     "kind": "Acl",
     "owner": "pamgene",
@@ -13,11 +13,11 @@
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2021-10-15T11:05:17.478415Z"
+    "value": "2022-02-03T08:54:09.297729Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-01-25T10:37:34.344353Z"
+    "value": "2022-02-03T08:54:10.113852Z"
   },
   "urls": [
     {
@@ -40,12 +40,12 @@
   ],
   "url": {
     "kind": "Url",
-    "uri": "https://github.com/tercen/STK_QC_app"
+    "uri": "https://github.com/tercen/QC_STK_app"
   },
-  "version": "0.0.1",
+  "version": "0.1.2",
   "authors": [],
   "isPublic": false,
-  "projectId": "33fb64086c3295748ed979a87b34b3b7",
+  "projectId": "c845ceade32c4423bc616ff5ab22f158",
   "folderId": "",
   "links": [
     {
@@ -308,7 +308,7 @@
             "kind": "OperatorRef",
             "name": "Nominal CV Estimate",
             "version": "0.0.1",
-            "operatorId": "32686b39f178f64eef1bbd38448e783b",
+            "operatorId": "c845ceade32c4423bc616ff5ab438aab",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -598,7 +598,7 @@
             "kind": "OperatorRef",
             "name": "Log Cutoff",
             "version": "0.0.1",
-            "operatorId": "33fb64086c3295748ed979a87b61a753",
+            "operatorId": "c845ceade32c4423bc616ff5ab439b99",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -1341,7 +1341,7 @@
             "kind": "OperatorRef",
             "name": "Check input 1 operator",
             "version": "0.0.2",
-            "operatorId": "32686b39f178f64eef1bbd3844b1317d",
+            "operatorId": "c845ceade32c4423bc616ff5ab43a369",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -1431,8 +1431,8 @@
       },
       "model": {
         "kind": "WizardStepModel",
-        "namespace": "STK QC",
-        "description": "",
+        "namespace": "STKQC",
+        "description": "Quality control of Serine/Threonine PamChip measurements.",
         "appDesignType": "stkqc.c05_groups_series",
         "factors": [
           {
